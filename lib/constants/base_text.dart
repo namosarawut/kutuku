@@ -10,7 +10,7 @@ class BaseText {
   ) {
     return Text(title,
         style: GoogleFonts.roboto(
-          textStyle: TextStyle(color: evShopTextColor, fontWeight: FontWeight.bold, fontSize: size),
+          textStyle: TextStyle(color: kuTuKuTextColor, fontWeight: FontWeight.bold, fontSize: size),
         ));
   }
 
@@ -20,7 +20,7 @@ class BaseText {
   ) {
     return Text(title,
         style: GoogleFonts.roboto(
-          textStyle: TextStyle(color: evShopHoverColor, fontWeight: FontWeight.bold, fontSize: size),
+          textStyle: TextStyle(color: kuTuKuHoverColor, fontWeight: FontWeight.bold, fontSize: size),
         ));
   }
 }

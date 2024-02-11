@@ -1,4 +1,4 @@
-enum Routes { initial, home}
+enum Routes { initial, home,createAccount}
 
 extension TypeCoverter on Routes {
   String toStringPath() {
@@ -7,6 +7,8 @@ extension TypeCoverter on Routes {
         return '/';
       case Routes.home:
         return 'home';
+        case Routes.createAccount:
+        return 'createAccount';
     }
   }
 }
