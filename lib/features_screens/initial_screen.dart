@@ -46,7 +46,7 @@ class _InitialScreenState extends State<InitialScreen> {
                 color: Colors.white,
               ),
               SizedBox(
-                height: 590,
+                height: MediaQuery.of(context).size.height /1.5,
                 child: PageView.builder(
                   controller: controller,
                   padEnds: false,
@@ -60,9 +60,12 @@ class _InitialScreenState extends State<InitialScreen> {
                         color: Colors.white,
                         child: Column(
                           children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(30),
-                              child: Image.asset(defaultPageData[index].imgPath.toString()),
+                            SizedBox(
+                              height:  MediaQuery.of(context).size.height /2.1,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(30),
+                                child: Image.asset(defaultPageData[index].imgPath.toString()),
+                              ),
                             ),
                             const SizedBox(
                               height: 20,
