@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:kutuku/bloc/appbar_fade_logic_bloc/appbar_fade_logic_bloc.dart';
+import 'package:kutuku/bloc/register_bloc/register_cubit.dart';
 import 'package:kutuku/core/app_core.dart';
 import 'package:kutuku/routing/map_routing.dart';
 import 'package:kutuku/user/data_store.dart';
@@ -57,6 +58,7 @@ class KuTuKuApp extends StatelessWidget {
             return MultiBlocProvider(
               providers: [
                 BlocProvider<AppbarFadeLogicBloc>(create: (BuildContext context) => AppbarFadeLogicBloc()),
+                BlocProvider<RegisterFormBloc>(create: (BuildContext context) => RegisterFormBloc()),
               ],
               child: MaterialApp(
                 title: 'Kutuku',

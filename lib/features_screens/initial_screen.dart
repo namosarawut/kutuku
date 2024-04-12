@@ -30,8 +30,8 @@ class _InitialScreenState extends State<InitialScreen> {
   Widget build(BuildContext context) {
     var setEnv = DataStore().getEnv<String>("ENVIRONMENT_NAME");
     var urls = DataStore().getEnv<String>("BFF_BASE_URL");
-    print(setEnv);
-    print(urls);
+    // print(setEnv);
+    // print(urls);
     return Scaffold(
         body: Row(
       mainAxisAlignment: MainAxisAlignment.center,
